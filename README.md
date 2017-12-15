@@ -1,2 +1,1 @@
-# datasciencecoursera
-Course project
+# Getting-and-Cleaning-Data-Project
