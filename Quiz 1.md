@@ -54,13 +54,6 @@ What is produced by the following code?
 -   A set of 3 panels showing the relationship between weight and time
     for each diet.
 
-#### Explanation
-
-    library(nlme)
-    library(lattice)
-    xyplot(weight ~ Time | Diet, BodyWeight)
-
-![](Quiz_02_files/figure-markdown_strict/unnamed-chunk-2-1.png)
 
 Question 03
 -----------
@@ -105,15 +98,6 @@ Which of the following is an explanation for why no plot appears?
 -   The object 'p' has not yet been printed with the appropriate
     print method.
 
-#### Explanation
-
-    library(lattice)
-    library(datasets)
-    data(airquality)
-    p <- xyplot(Ozone ~ Wind | factor(Month), data = airquality)
-    print(p)
-
-![](Quiz_02_files/figure-markdown_strict/unnamed-chunk-4-1.png)
 
 Question 05
 -----------
@@ -167,15 +151,6 @@ visualize that using ggplot2?
 -   `airquality = transform(airquality, Month = factor(Month))`  
     `qplot(Wind, Ozone, data = airquality, facets = . ~ Month)`
 
-#### Explanation
-
-    library(datasets)
-    library(ggplot2)
-    data(airquality)
-    airquality = transform(airquality, Month = factor(Month))
-    qplot(Wind, Ozone, data = airquality, facets = . ~ Month)
-
-![](Quiz_02_files/figure-markdown_strict/unnamed-chunk-6-1.png)
 
 Question 08
 -----------
@@ -234,13 +209,5 @@ scatterplot?
 
 -   `qplot(votes, rating, data = movies) + geom_smooth()`
 
-#### Explanation
 
-    library(ggplot2)
-    qplot(votes, rating, data = movies) + geom_smooth()
-
-    ## geom_smooth: method="auto" and size of largest group is >=1000, so using gam with formula: y ~ s(x, bs = "cs"). Use
-    'method = x' to change the smoothing method.
-    
-    ![](Quiz_02_files/figure-markdown_strict/unnamed-chunk-9-1.png)
 
